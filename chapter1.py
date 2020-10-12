@@ -32,7 +32,7 @@ foo = "from urllib.request import urlopen print(str(urlopen('http://composingpro
 #Exercise 1.5.5 - Fibonacci Sequence
 
 def fib(n):
-    """Return Fibonnacci sequence number of (n) length"""
+    """Return Fibonacci sequence number of (n) length"""
     prev, curr = 0, 1
 
     k = 2
@@ -40,6 +40,6 @@ def fib(n):
     while k < n:
         prev, curr = curr, prev + curr
         k = k + 1
-        return curr
+    return curr
 
 print(fib(9))
