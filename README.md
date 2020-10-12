@@ -1,5 +1,5 @@
 # composing-programs 
-Composing Programs - Python3 
+My self study of Composing Programs 
 
 About
 -----
