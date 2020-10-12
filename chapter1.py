@@ -24,15 +24,22 @@ The best way to get started programming in Python is to interact with the interp
 
 foo = "from urllib.request import urlopen print(str(urlopen('http://composingprograms.com/shakespeare.txt')))"
 
-
-
-
-
-
-
-
 # chap_1_exercises = {
 #     "section1_1": chapter1_1
 # }
 
-print(section1_1)
+
+#Exercise 1.5.5 - Fibonacci Sequence
+
+def fib(n):
+    """Return Fibonnacci sequence number of (n) length"""
+    prev, curr = 0, 1
+
+    k = 2
+
+    while k < n:
+        prev, curr = curr, prev + curr
+        k = k + 1
+        return curr
+
+print(fib(9))
