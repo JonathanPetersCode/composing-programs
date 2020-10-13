@@ -39,7 +39,8 @@ def fib(n):
 
     while k < n:
         prev, curr = curr, prev + curr
+        print(curr)
         k = k + 1
     return curr
 
-print(fib(9))
+print(fib(8))
