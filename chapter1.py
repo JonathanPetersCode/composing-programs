@@ -34,13 +34,19 @@ foo = "from urllib.request import urlopen print(str(urlopen('http://composingpro
 def fib(n):
     """Return Fibonacci sequence number of (n) length"""
     prev, curr = 0, 1
-
     k = 2
-
     while k < n:
         prev, curr = curr, prev + curr
-        print(curr)
         k = k + 1
     return curr
 
-print(fib(8))
+print(fib(12))
+
+#Assert Fib() Tests
+def fib_test():
+    assert fib(12) == 89, "The 12th Fibonacci number should be 89"
+    assert fib(8) == 13, "The 8th Fibonacci number should be 13"
+    assert fib(20) == 4181, "The 20th Fibonacci number should be 4181"
+    assert fib(
+        100) == 218922995834555169026, "The 100th Fibonacci number should be 218922995834555169026"
+
