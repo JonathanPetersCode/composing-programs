@@ -151,3 +151,25 @@ def square_root_newton(a):
         return find_zero(f, df)
 
 print(square_root_newton(64))
+
+#Currying example
+def curried_pow(x):
+        def h(y):
+            return pow(x, y)
+        return h
+
+print(curried_pow(2)(3))
+
+#Decorator example
+def trace(x):
+    def inner(y):
+        print("Output of function call:")
+        return x(y)
+    return inner
+
+@trace
+#Invoke trace func with decorator
+def triple(y):
+    return y * 3
+
+print(triple(4))
