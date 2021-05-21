@@ -172,4 +172,17 @@ def trace(x):
 def triple(y):
     return y * 3
 
-print(triple(4))
+
+food_items = ["apple", "blueberry", "carrots", "danish"]
+prices = [1.32, 1.81, 3.23, 4.19]
+
+menu_dict = {}
+
+for price in prices:
+    for food in food_items:
+        if food not in menu_dict.keys():
+            menu_dict[food] =  price
+
+print(menu_dict)
+
+

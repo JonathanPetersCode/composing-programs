@@ -1,0 +1,1 @@
+print(curried_pow(2)(3))
